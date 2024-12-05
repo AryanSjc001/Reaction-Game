@@ -32,6 +32,3 @@ To run the game locally, you only need a modern web browser like Google Chrome, 
 - **CSS**: Styling the game interface.
 - **JavaScript**: Game logic and interaction (circle positioning, measuring reaction time).
 
-## Credits
-
-- Created by [Your Name]. (You can replace this with your actual name if you like!)
