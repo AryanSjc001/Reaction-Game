@@ -16,7 +16,7 @@ function getRandomPosition() {
 }
 
 startButton.addEventListener('click', () => {
-  // Hide text elements
+  
   startButton.style.display = 'none';
   instructions.style.display = 'none';
   resultDisplay.textContent = '';
@@ -34,13 +34,13 @@ function showCircle() {
     resultDisplay.textContent = `Game Over! Your average reaction time is ${Math.round(
       averageTime
     )} ms.`;
-    resultDisplay.style.display = 'block'; // Show result after game ends
-    startButton.style.display = 'inline-block'; // Show start button
+    resultDisplay.style.display = 'block';
+    startButton.style.display = 'inline-block'; 
     startButton.disabled = false;
     return;
   }
 
-  const delay = Math.floor(Math.random() * 3000) + 1000; // 1 to 4 seconds
+  const delay = Math.floor(Math.random() * 3000) + 1000;
   const { x, y } = getRandomPosition();
 
   setTimeout(() => {
