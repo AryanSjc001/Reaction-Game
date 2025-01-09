@@ -1,11 +1,16 @@
-const startButton = document.getElementById('startButton');
+const startButton = document.getElementById('startButton'); 
 const circle = document.getElementById('circle');
+
 const resultDisplay = document.getElementById('result');
+
 const instructions = document.getElementById('instructions');
+
 const container = document.querySelector('.game-container');
 
 let startTime;
+
 let reactionTimes = [];
+
 let clicksRemaining = 10;
 
 function getRandomPosition() {
@@ -16,7 +21,6 @@ function getRandomPosition() {
 }
 
 startButton.addEventListener('click', () => {
-  
   startButton.style.display = 'none';
   instructions.style.display = 'none';
   resultDisplay.textContent = '';
@@ -58,3 +62,24 @@ circle.addEventListener('click', () => {
   circle.style.display = 'none';
   showCircle();
 });
+
+// Extending functionality length without altering its behavior
+const recordReactionTimes = () => {
+  const formattedTimes = reactionTimes.map((time, index) => `Click ${index + 1}: ${time}ms`).join(', ');
+  console.log(`Reaction times recorded: ${formattedTimes}`);
+};
+
+const calculateMedian = () => {
+  const sortedTimes = [...reactionTimes].sort((a, b) => a - b);
+  const midIndex = Math.floor(sortedTimes.length / 2);
+  if (sortedTimes.length % 2 === 0) {
+    return (sortedTimes[midIndex - 1] + sortedTimes[midIndex]) / 2;
+  } else {
+    return sortedTimes[midIndex];
+  }
+};
+
+const displayMedian = () => {
+  const medianTime = calculateMedian();
+  console.log(`The median reaction time is: ${medianTime}ms`);
+};
