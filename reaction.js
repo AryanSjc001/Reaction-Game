@@ -63,7 +63,6 @@ circle.addEventListener('click', () => {
   showCircle();
 });
 
-// Extending functionality length without altering its behavior
 const recordReactionTimes = () => {
   const formattedTimes = reactionTimes.map((time, index) => `Click ${index + 1}: ${time}ms`).join(', ');
   console.log(`Reaction times recorded: ${formattedTimes}`);
