@@ -2,12 +2,16 @@
 
 This is a fun reaction time game where you need to click a red circle as quickly as you can when it appears randomly on the screen. Your reaction time will be measured in milliseconds, and after 10 rounds, the average reaction time will be displayed.
 
+---
+
 ## Features
 
 - Start the game by clicking the "Start Game" button.
 - A red circle will appear at random positions on the screen.
 - Click the circle as quickly as possible each time it appears.
 - After 10 rounds, the average reaction time will be displayed.
+
+---
 
 ## How to Play
 
@@ -16,9 +20,7 @@ This is a fun reaction time game where you need to click a red circle as quickly
 3. Your goal is to click the circle as quickly as possible each time it appears.
 4. The game will run for 10 rounds, and after that, your average reaction time will be displayed.
 
-## Prerequisites
-
-To run the game locally, you only need a modern web browser like Google Chrome, Firefox, or Safari.
+---
 
 ## How to Run
 
@@ -26,9 +28,4 @@ To run the game locally, you only need a modern web browser like Google Chrome, 
 2. Open the `index.html` file in your preferred web browser.
 3. Start the game by clicking the "Start Game" button.
 
-## Technologies Used
-
-- **HTML**: Structure of the game.
-- **CSS**: Styling the game interface.
-- **JavaScript**: Game logic and interaction (circle positioning, measuring reaction time).
-
+---
